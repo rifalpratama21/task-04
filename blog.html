@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>Creating My Project Page</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <img src="assets/images/logo.png" alt="logo" >
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="blog.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+          <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="submitData(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input type="text" id="input-blog-title" />
+            </div>
+            
+            
+            <div class="date-container">
+              <div class="start">
+                <label for="input-blog-date-start">Start</label>
+                <input type="date" id="input-blog-date-start" />
+              </div>
+              <div class="end">
+                <label for="input-blog-date-end">End</label>
+                <input type="date" id="input-blog-date-end" />
+            </div>
+              
+              
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div><br>
+            <!-- Content CheckBox -->
+            <label  for="">Technologies</label><br>
+            <div class="container-check">
+              
+              
+                <input type="checkbox" name="reactjs" id="check1">
+                <label class="label-check" for="reactjs">React js</label><br>
+              
+              
+                <input type="checkbox" name="nodejs" id="check2">
+                <label class="label-check" for="nodejs">Node js</label><br>
+              
+              
+                <input type="checkbox" name="nextjs" id="check3">
+                <label class="label-check" for="nextjs">Next js</label><br>
+              
+              
+                <input type="checkbox" name="golang" id="check4">
+                <label class="label-check" for="typescript">Golang</label>
+              
+            </div>
+
+            <div>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  Upload Image
+                </label>
+                <input type="file" id="input-blog-image"/>
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div class="blog-list" id="contents">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/images/blog-img.png" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+            <div class="icon-container">
+              <a href=""><i class="fa-brands fa-react" value="reactjs"></i></a>
+              <a href=""><i class="fa-brands fa-node" value="nodejs"></i></a>
+              <a href=""><i class="fa-brands fa-neos" value="nextjs"></i></a>
+              <a href=""><i class="fa-brands fa-golang" value="golang"></i></a>
+            </div>
+
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>

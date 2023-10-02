@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbdbdb;
+  padding: 0 40px;
+}
+
+.nav-left ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-left img {
+  margin-right: 50px;
+}
+
+.nav-left ul li {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left a:hover {
+  color: orangered;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+form {
+  width: 350px;
+  margin: 50px auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+button {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  height: 600px;
+  width: 1150px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.media {
+  text-align: start;
+
+  margin-top: 50px;
+}
+.fa-linkedin{
+  background-color: #00a0dc;
+  padding:10px;
+  border-radius: 10px;
+}
+.fa-instagram{
+  margin-left: 30px;
+  background-color:rgb(228, 64, 95) ;
+  padding:10px;
+  border-radius: 10px;
+}
+.fa-facebook{
+  margin-left: 30px;
+  background-color:blue ;
+  padding:10px;
+  border-radius: 10px;
+}
+.fa-twitter{
+  margin-left: 30px;
+  background-color: rgba(15, 174, 248, 0.932);
+  padding:10px;
+  border-radius: 10px;
+}
+
+.date-container{
+  display: flex;
+margin: 0;
+gap: 18px;
+}
+
+#input-blog-image{
+  background:whitesmoke
+}
+ 
+
+.container-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  flex-wrap: nowrap;
+  height: 60px;
+}
+
+.container-check #check label{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+ .button-group{
+  display: flex;
+  justify-content: end;
+ }
+
+ .icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
+
+ .icon-container i{
+  color: black;
+  font-size: 80px;
+  margin-right: 20px;
+ }
+ a:hover{
+  cursor: pointer;
+ }
